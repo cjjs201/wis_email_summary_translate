@@ -1,14 +1,93 @@
-<!-- privacy.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy - WIS Email Assistant</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy | WIS Email Assistant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      line-height: 1.6;
+      color: #2d3748;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 2rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    a {
+      color: #3182ce;
+    }
+  </style>
 </head>
 <body>
+
   <h1>Privacy Policy</h1>
+  <p>Last updated: March 24, 2025</p>
+
   <p>
-    We do not store your personal data on our servers. Your email access is used only to fetch messages with your permission.
+    This privacy policy describes how WIS Email Assistant (“we”, “our”, or “the app”) collects, uses, and protects your data when you use our service.
   </p>
+
+  <h2>1. What We Collect</h2>
+  <ul>
+    <li><strong>OAuth Access Token:</strong> We use Google OAuth to securely access your Gmail inbox. Tokens are stored encrypted and never shared.</li>
+    <li><strong>Email Metadata:</strong> We access sender, subject, and body of emails that match specific school-related keywords (e.g., “WIS”, “Westlink”).</li>
+  </ul>
+
+  <h2>2. How Your Data Is Used</h2>
+  <ul>
+    <li>To read and summarize school-related emails from your Gmail inbox</li>
+    <li>To translate the summary into your selected language</li>
+    <li>To send a notification of the summary to your connected Telegram account</li>
+  </ul>
+
+  <h2>3. Data Storage</h2>
+  <p>
+    We do <strong>not</strong> store the contents of your emails. Summarization and translation results are temporarily held in memory for delivery to your Telegram, then discarded.
+  </p>
+
+  <h2>4. Revoking Access</h2>
+  <p>
+    You may revoke Gmail access at any time via your <a href="https://myaccount.google.com/permissions" target="_blank">Google Account Settings</a>.
+  </p>
+
+  <h2>5. Third-Party Services</h2>
+  <p>
+    We use the following external APIs:
+  </p>
+  <ul>
+    <li>Google OAuth 2.0 (for secure email access)</li>
+    <li>Gemini / ChatGPT API (for AI summarization)</li>
+    <li>Telegram Bot API (for sending messages)</li>
+  </ul>
+
+  <h2>6. Security</h2>
+  <p>
+    All communication is encrypted using HTTPS. Access tokens are stored securely and never exposed to unauthorized parties.
+  </p>
+
+  <h2>7. Contact</h2>
+  <p>
+    If you have any questions about this policy, please contact us at: <strong>support@nays.world</strong>
+  </p>
+
 </body>
 </html>
